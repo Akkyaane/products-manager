@@ -1,0 +1,39 @@
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products Manager</title>
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h1>Products Manager</h1>
+        <ul>
+          <li><a href="index.html">Produits disponibles</a></li>
+          <li><a href="list.html">Ma liste de courses</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h2>Liste de courses</h2>
+      <div class="list-table-wrapper">
+        <table class="list-table">
+          <thead>
+            <tr>
+              <th>Nom du produit</th>
+              <th>Prix unitaire</th>
+              <th>Quantite</th>
+              <th>Sous-total</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="tbody">
+          </tbody>
+        </table>
+      </div>
+      <p class="list-total">Total : <strong id="total">0,00 euros</strong></p>
+    </main>
+    <script type="module" src="src/list.js"></script>
+  </body>
+</html>

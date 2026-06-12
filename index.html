@@ -1,0 +1,36 @@
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products Manager</title>
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <h1>Products Manager</h1>
+        <ul>
+          <li><a href="index.html">Produits disponibles</a></li>
+          <li><a href="list.html">Ma liste de courses</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h2><span id="total-products">0</span> produits disponibles</h2>
+      <div>
+        <form id="search-form">
+          <input
+            type="search"
+            name="input"
+            id="input"
+            placeholder="Rechercher..."
+          />
+          <input type="submit" placeholder="Rechercher" value="Envoyer" />
+        </form>
+      </div>
+      <div id="products"></div>
+    </main>
+    <script type="module" src="src/products.js"></script>
+  </body>
+</html>
